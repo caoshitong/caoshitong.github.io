@@ -194,9 +194,9 @@ var oUlXkAn=$("dnzsContUl");
 		
 		})(i)
 	}
-	//苹果菜单
 	
-	//官网菜单
+	
+	
 	var speed1 = 0;
 	var left1 = 0;
 	var i1 = 0;
@@ -250,13 +250,11 @@ function move2(obj,iTarget){
 		
 		if(opened){
 				for(var i=0;i<aLiQiu.length;i++){
-				
 					aLiQiu[i].style.display="none";
 					move3(aLiQiu[i],0)
 				}
 				opened=false;
 		}else{
-			
 			for(var i=0;i<aLiQiu.length;i++){
 					var a=rnd(0,256);
 					var b=rnd(0,256);
@@ -399,7 +397,7 @@ function move3(obj,iTarget){
 				}
 				
 			}
-		}/*end for loop */
+		}
 		
 		//返回
 		
@@ -407,8 +405,7 @@ function move3(obj,iTarget){
 			return null;
 		}
 		return aLiPhoto[iMinIndex];
-		
-	}	/*end fn  findMin */
+	}
 	
 	function getDis(obj1,obj2){
 		var a = obj1.offsetLeft - obj2.offsetLeft;
@@ -422,7 +419,6 @@ function move3(obj,iTarget){
 		var t1 = obj1.offsetTop;
 		var r1 = l1 + obj1.offsetWidth;
 		var b1 = t1 + obj1.offsetHeight;
-		
 		
 		var l2 = obj2.offsetLeft;
 		var t2 = obj2.offsetTop;
@@ -499,7 +495,7 @@ function move3(obj,iTarget){
 							  
 							  //模拟数据的准备
 							  for(var i=0;i<aLi.length;i++){
-								aImg[i].src = "cat2/" + parseInt(Math.random() * 11+1) + ".jpg";
+								aImg[i].src = "imgs/cats/" + parseInt(Math.random() * 11+1) + ".jpg";
 							  }
 							  //放出来
 							  up();	
@@ -641,7 +637,6 @@ var pageEvent = [
                     var $item6=$("item6")
                      setTimeout(function(){
                         setCss3($item6,{transition:"1s","transform":"scale(1,1)"})
-					
  					},1000)
                 },
                 outAn:function(){
